@@ -1,10 +1,10 @@
 let fields = [
     null,
     null,
-    'cross',
-    'circle',
-    'cross',
-    'circle',
+    null,
+    null,
+    null,
+    null,
     null,
     null,
     null
@@ -86,6 +86,23 @@ function drawWinningLine(combination) {
 }
 
 
+function restartGame() {
+    fields = [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ];
+
+    render();
+}
+
+
 function generateAnimatedCircleSVG() {
     const circleColor = '#01b0ef';
     const animationDuration = '0.5s';
@@ -129,5 +146,6 @@ function generateAnimatedCircleSVG() {
   
     return svgCode;
   }
+
   
 render();
