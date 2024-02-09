@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #323232;
+    flex-direction: column;
+}
+
+h1 {
+    color: orange;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    border: none
+}
+
+
+td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Die Trennlinien der Tabelle sollten nur innerhalb der Tabelle sein */
+td {
+    border: 5px solid white;
+    width: 100px;
+    /* Breite der Zellen */
+    height: 100px;
+    /* Höhe der Zellen */
+}
+
+tr:first-child td {
+    border-top: none;
+    /* Entfernt die obere Linie der ersten Zeile */
+}
+
+tr:last-child td {
+    border-bottom: none;
+    /* Entfernt die untere Linie der letzten Zeile */
+}
+
+td:first-child {
+    border-left: none;
+    /* Entfernt die linke Linie der ersten Spalte */
+}
+
+td:last-child {
+    border-right: none;
+    /* Entfernt die rechte Linie der letzten Spalte */
+}
+
+
+#innerContainer {
+    position: absolute;
+}
